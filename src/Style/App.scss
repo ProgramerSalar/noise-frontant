@@ -1,0 +1,61 @@
+@import "../Style/Navbar.scss";
+@import "../Style/category.scss";
+@import "../Style/product";
+@import "../Style//content";
+@import "../Style/blog";
+@import "../Style/testimonail";
+@import "../Style/offer";
+@import "../Style/Collection.scss";
+@import "../Style/Product_Details/productdetails";
+@import "../Style/Footer.scss";
+@import "../Style/Faq.scss";
+@import "../Style/Disclaimer.scss";
+@import "../Style/spacification";
+@import "../Style/reviews/HeadingReviews.scss";
+@import "../Style/reviews/ReviewCard.scss";
+@import "../Style/reviews/Review.scss";
+
+
+
+
+
+@font-face {
+  font-family: nb;
+  src: url('../assets/font/site-wise-font-noise.ttf');
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: nb;
+
+}
+
+
+html,body{
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.nav-container{
+  background:#000000;
+
+}
+
+
+.home-container{
+  background: white;
+  // background: radial-gradient(#fff, #ffd6d6);
+}

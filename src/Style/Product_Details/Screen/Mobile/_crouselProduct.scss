@@ -1,0 +1,21 @@
+.product-crousel {
+  // background-color: red;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  // height: 60vw;
+  border-bottom: solid 1px rgb(204, 192, 192);
+  width: 100vw;
+
+  .carousel .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .carousel .slide img {
+    // height: 10vw;  /* change this to whatever you want */
+    // width:11vw;
+    width: 90vw;
+  }
+}

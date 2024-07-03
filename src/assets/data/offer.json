@@ -1,0 +1,232 @@
+{
+    "offer1":[
+
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\eleven.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79%  off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\three.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\five.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "offer-image":"src\\assets\\offer\\fofteem.png"
+            
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\sox.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\sevem.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\eight.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\nine.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\ten.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\eleven.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\twelve.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"$6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        }
+
+    ],
+    "offer2":[
+        
+            {
+                "id":"1",
+                "image":"src\\assets\\offer\\thrteen.png",
+                "name":"ColorFit Icon 2 Elite",
+                "desc":"Stenless Steel | 1.8 HD Display",
+                "old-price":"6999",
+                "price-off":"79% off",
+                "price":"Sale Price $1999"
+            }, 
+            {
+                "id":"1",
+                "image":"src\\assets\\offer\\forteen.png",
+                "name":"ColorFit Icon 2 Elite",
+                "desc":"Stenless Steel | 1.8 HD Display",
+                "old-price":"6999",
+                "price-off":"79% off",
+                "price":"Sale Price $1999"
+            }, 
+            {
+                "id":"1",
+                "image":"src\\assets\\offer\\soxteem.png",
+                "name":"ColorFit Icon 2 Elite",
+                "desc":"Stenless Steel | 1.8 HD Display",
+                "old-price":"6999",
+                "price-off":"79% off",
+                "price":"Sale Price $1999"
+            }, 
+            {
+                "id":"1",
+                "offer-image":"src\\assets\\offer\\two.png"
+            }, 
+            {
+                "id":"1",
+                "image":"src\\assets\\offer\\five.png",
+                "name":"ColorFit Icon 2 Elite",
+                "desc":"Stenless Steel | 1.8 HD Display",
+                "old-price":"6999",
+                "price-off":"79% off",
+                "price":"Sale Price $1999"
+            }, 
+            {
+                "id":"1",
+                "image":"src\\assets\\offer\\three.png",
+                "name":"ColorFit Icon 2 Elite",
+                "desc":"Stenless Steel | 1.8 HD Display",
+                "old-price":"6999",
+                "price-off":"79% off",
+                "price":"Sale Price $1999"
+            }, 
+            {
+                "id":"1",
+                "image":"src\\assets\\offer\\five.png",
+                "name":"ColorFit Icon 2 Elite",
+                "desc":"Stenless Steel | 1.8 HD Display",
+                "old-price":"6999",
+                "price-off":"79% off",
+                "price":"Sale Price $1999"
+            }
+        
+    ],
+    "offer3":[
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\nine.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\ten.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\eleven.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "offer-image":"src\\assets\\offer\\twenty-five.png"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\three.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\five.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\sox.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        },
+        {
+            "id":"1",
+            "image":"src\\assets\\offer\\sevem.png",
+            "name":"ColorFit Icon 2 Elite",
+            "desc":"Stenless Steel | 1.8 HD Display",
+            "old-price":"6999",
+            "price-off":"79% off",
+            "price":"Sale Price $1999"
+        }
+    ]
+}

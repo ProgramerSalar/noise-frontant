@@ -1,0 +1,270 @@
+
+// mobile screen 
+@media screen and (min-width: 0px) and (max-width: 450px) {
+
+
+    
+
+    .faq-container{
+        display: block;
+    }
+
+    .spacific-constant{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1.5rem;
+        align-items: flex-start;
+
+    }
+
+    .spacification-heading{
+        margin-bottom: 2rem;
+        // font-weight: lighter;
+        font-size: 1.5rem;
+        
+
+
+
+    }
+
+    .container-one{
+
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        justify-content: start;
+
+    }
+
+    .one{
+        display: inline-block;
+        flex-direction: row;
+        align-content: start;
+        align-items: flex-start;
+        justify-content: start;
+        flex-wrap: nowrap;
+        margin: 0.3rem 0;
+        margin: 0.4rem 0;
+        font-size: 0.85rem;
+        line-height: 5vw;
+
+        
+
+    }
+
+
+    .country-of-origin, .marketed-by-and-imported-by,  .package-contants{
+        display: inline-block;
+        // background-color: gray;
+        font-weight: lighter;
+        opacity: 0.9;
+
+        
+    }
+
+    .country-of-origin-india, .imported-company-name, .answer-the-package-contants{
+
+        display: inline-block;
+        font-weight: lighter;
+        opacity: 0.9;
+
+        
+    }
+
+
+
+
+
+    .spacification-section{
+        display:block;
+    
+    }
+    
+    .row-one{
+        display: flex;
+        margin: 0.7rem 0;
+    
+    }
+    
+    p:nth-child(2){
+        margin-left: 0.5rem;
+    }
+
+
+    
+
+
+}
+
+
+
+// Tablet screen 
+
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+
+
+    .faq-container{
+        display: block;
+    }
+
+    .spacific-constant{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        align-items: flex-start;
+
+    }
+
+    .spacification-heading{
+        margin-bottom: 2rem;
+        // font-weight: lighter;
+        font-size: 3vw;
+
+
+
+    }
+
+    .container-one{
+
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        justify-content: start;
+
+    }
+
+    .one{
+        display: inline-block;
+        flex-direction: row;
+        align-content: start;
+        align-items: flex-start;
+        justify-content: start;
+        flex-wrap: nowrap;
+        margin: 0.3rem 0;
+        margin: 0.4rem 0;
+        font-size: 0.85rem;
+
+    }
+
+
+    .country-of-origin, .marketed-by-and-imported-by,  .package-contants{
+        display: inline-block;
+        // background-color: gray;
+
+        
+    }
+
+    .country-of-origin-india, .imported-company-name, .answer-the-package-contants{
+
+        display: inline-block;
+
+        
+    }
+
+
+
+
+
+    .spacification-section{
+        display:block;
+    
+    }
+    
+    .row-one{
+        display: flex;
+        margin: 0.7rem 0;
+    
+    }
+    
+    p:nth-child(2){
+        margin-left: 0.5rem;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .faq-container{
+        display: block;
+    }
+
+    .spacific-constant{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        align-items: flex-start;
+
+    }
+
+    .spacification-heading{
+        margin-bottom: 2rem;
+        // font-weight: lighter;
+        font-size: 3vw;
+
+
+
+    }
+
+    .container-one{
+
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        justify-content: start;
+
+    }
+
+    .one{
+        display: inline-block;
+        flex-direction: row;
+        align-content: start;
+        align-items: flex-start;
+        justify-content: start;
+        flex-wrap: nowrap;
+        margin: 0.3rem 0;
+        margin: 0.4rem 0;
+        font-size: 0.85rem;
+
+    }
+
+
+    .country-of-origin, .marketed-by-and-imported-by,  .package-contants{
+        display: inline-block;
+        // background-color: gray;
+
+        
+    }
+
+    .country-of-origin-india, .imported-company-name, .answer-the-package-contants{
+
+        display: inline-block;
+
+        
+    }
+
+
+
+
+
+    .spacification-section{
+        display:block;
+    
+    }
+    
+    .row-one{
+        display: flex;
+        margin: 0.7rem 0;
+    
+    }
+    
+    p:nth-child(2){
+        margin-left: 0.5rem;
+    }
+
+
+
+}

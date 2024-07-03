@@ -1,0 +1,104 @@
+// category css
+
+
+// default property 
+.col-2{
+    text-align: center;
+    a{
+        p{
+            color: #000;
+        }
+    }
+}
+
+// mobile screen 
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .category-container {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    // margin: 20px;
+    margin-top: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+
+  }
+
+  .col-2 {
+    padding-left: 10px;
+
+
+    a {
+      img {
+        width: 3.5rem;
+        border-radius: 100%;
+      }
+      p{
+        font-weight: lighter;
+        font-size: 11px;
+      }
+    
+    }
+  }
+}
+
+// Tablet screen 
+
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+  .category-container {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  .col-2 {
+    padding-left: 10px;
+
+    a {
+      img {
+        width: 4rem;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+
+// big screen 
+
+@media screen and (min-width: 1024px) {
+
+    .category-container{
+        max-width:1200px ;
+        margin: auto;
+        padding-top: 3rem;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .col-2{
+        // padding-left: 10px;
+        display: inline-block;
+        // background-color: green;
+        
+
+        a{
+          display: inline-block;
+          margin-left: 2.5rem;
+          // background-color: green;
+          
+
+          
+            img{
+                width: 4rem;
+                border-radius: 100%;
+                // gap: 10rem;
+                // margin-left: 5rem;
+                
+            }
+        }
+    }
+}

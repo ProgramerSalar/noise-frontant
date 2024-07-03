@@ -1,0 +1,52 @@
+{
+    "blog":[
+        {
+            "id":"1",
+            "img":".\\assets\\Blogs\\one.png",
+            "heading":"Powering the Future with Nebula UI and EN 1 Processor in the All New NoiseFit Origin",
+            "description":"Are you ready to take the next step in your listening experience and feel the menu",
+            "date":"June 22, 2022",
+            "link":"https://www.gonoise.com/blogs/posts/powering-the-future-with-nebula-ui-and-en-1-processor-in-the-all-new-noisefit-origin"
+        },
+        {
+            "id":"1",
+            "img":".\\assets\\Blogs\\two.png",
+            "heading":"Powering the Future with Nebula UI and EN 1 Processor in the All New NoiseFit Origin",
+            "description":"Are you ready to take the next step in your listening experience and feel the menu",
+            "date":"June 22, 2022",
+            "link":"https://www.gonoise.com/blogs/posts/unveiling-a-sound-statement-with-the-all-new-noise-sound-master"
+        },
+        {
+            "id":"1",
+            "img":".\\assets\\Blogs\\three.png",
+            "heading":"Powering the Future with Nebula UI and EN 1 Processor in the All New NoiseFit Origin",
+            "description":"Are you ready to take the next step in your listening experience and feel the menu",
+            "date":"June 22, 2022",
+            "link":"https://www.gonoise.com/blogs/posts/cultivating-a-culture-of-well-being-at-work"
+        },
+        {
+            "id":"1",
+            "img":".\\assets\\Blogs\\four.png",
+            "heading":"Powering the Future with Nebula UI and EN 1 Processor in the All New NoiseFit Origin",
+            "description":"Are you ready to take the next step in your listening experience and feel the menu",
+            "date":"June 22, 2022",
+            "link":"https://www.gonoise.com/blogs/posts/fashionably-fit-noisefit-evolve-4-for-trendsetters"
+        },
+        {
+            "id":"1",
+            "img":".\\assets\\Blogs\\five.png",
+            "heading":"Powering the Future with Nebula UI and EN 1 Processor in the All New NoiseFit Origin",
+            "description":"Are you ready to take the next step in your listening experience and feel the menu",
+            "date":"June 22, 2022",
+            "link":"https://www.gonoise.com/blogs/posts/track-and-improve-your-sleep-for-optimal-productivity"
+        },
+        {
+            "id":"1",
+            "img":".\\assets\\Blogs\\six.png",
+            "heading":"Powering the Future with Nebula UI and EN 1 Processor in the All New NoiseFit Origin",
+            "description":"Are you ready to take the next step in your listening experience and feel the menu",
+            "date":"June 22, 2022",
+            "link":"https://www.gonoise.com/blogs/posts/how-to-manage-your-energy-to-find-work-life-balance"
+        }
+    ]
+}
