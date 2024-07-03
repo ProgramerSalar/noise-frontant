@@ -10,7 +10,7 @@ import three from "../../../assets/product_details/privacy/three.png";
 import { FaStar } from "react-icons/fa";
 import Col_Two from "./Col_Two";
 
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 // import ProductCard from "./ProductCard";
 import { useProductContext } from "../../../context/productContext";
 // import WatchColor from "./WatchColor";
@@ -51,7 +51,8 @@ const ProductDetails = () => {
     Reviews = [],
   } = singleProduct;
 
-  console.log("ColorType", Reviews);
+  // console.log("ColorType", Reviews);
+
 
   const { id } = useParams();
 
@@ -59,6 +60,12 @@ const ProductDetails = () => {
 
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
   const [carouselImages, setCarouselImages] = useState();
+
+
+  const [amount, setAmount] = useState(1)
+  // console.log("amount", amount)
+
+  
 
   const [colortype, setColorType] = useState();
 
@@ -75,6 +82,20 @@ const ProductDetails = () => {
     // console.log("colorType", colorType)
     setColorType(colorType);
   };
+
+  console.log("color", color_Type)
+
+  const addtoCart = () => {
+
+  }
+
+  const setDescreased = () => {
+    amount > 1 ? setAmount(amount - 1) : setAmount(1)
+  }
+
+  const setIncreased = () => {
+    amount < quantity ? setAmount(amount + 1 ) : setAmount(quantity)
+  }
 
   useEffect(() => {
     getSingleProduct(`${API}/${id}`);
@@ -130,12 +151,17 @@ const ProductDetails = () => {
                   <h2>Quantity</h2>
                   <div className="quantity-buy-section">
                     <div className="quantity">
-                      <button>-</button>
-                      <span>{quantity}</span>
-                      <button>+</button>
+                      <button onClick={() => setDescreased()}>-</button>
+                      <span>{amount}</span>
+                      <button onClick={() => setIncreased()}>+</button>
                     </div>
                     <div className="buy-container">
+                      <NavLink to="/add-to-cart-noise"
+                      onClick={() => addtoCart(id, singleProduct)}
+                      >
                       <button>Buy Now</button>
+
+                      </NavLink>
                     </div>
                   </div>
                 </div>

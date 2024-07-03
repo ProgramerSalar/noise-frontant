@@ -21,7 +21,7 @@ const App = () => {
       <Route path="/product-details/:id" element={<ProductDetails/>} />
       <Route path="/hot-selling-product-collection" element={<Hot_Selling_Gadgets/>} />
       <Route path="/category-card-details-item" element={<CategoryDetailsitem/>} />
-      <Route path="/add-to-cart-noise/:id" element={<AddTOCart/>} />
+      <Route path="/add-to-cart-noise" element={<AddTOCart/>} />
       </Routes>
       </BrowserRouter>
   )
