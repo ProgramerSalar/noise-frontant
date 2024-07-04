@@ -817,3 +817,85 @@ style={{ display: audioMenu ? "block" : "none" }}
 
 
 
+-----------------------------------------------------------------------
+  // axios.post("http://localhost:9000/cart", {
+  //   cart
+  // })
+  // .then((response) => {
+  //   console.log("response", response)
+  // })
+
+
+  // useEffect(() => {
+  //   localStorage.setItem('cart', JSON.stringify(cart))
+  // }, [cart])
+
+
+  // useEffect(() => {
+  //   if (!hasPosted && cart.length > 0) {
+  //     axios.post("http://localhost:9000/cart", cart )
+  //       .then((response) => {
+  //         console.log("response", response);
+  //         setHasPosted(true); // Set the flag to true after posting
+  //       })
+  //       .catch((error) => {
+  //         console.error("Error posting cart data", error);
+  //       });
+  //   }
+  // }, [cart, hasPosted]);
+
+  // useEffect(() => {
+  //   // Fetch existing cart data from the server
+  //   axios.get("http://localhost:9000/cart")
+  //     .then((response) => {
+  //       const existingCartData = response.data;
+
+  //       // Check if the cart item already exists in the server
+  //       const isDuplicate = existingCartData.some((existingItem) => {
+  //         return cart.some((newItem) => newItem.id === existingItem.id);
+  //       });
+
+  //       // If it's not a duplicate, post the new cart data
+  //       if (!isDuplicate && cart.length > 0) {
+  //         axios.post("http://localhost:9000/cart", cart )
+  //           .then((postResponse) => {
+  //             console.log("postResponse", postResponse);
+  //           })
+  //           .catch((postError) => {
+  //             console.error("Error posting cart data", postError);
+  //           });
+  //       }
+  //     })
+  //     .catch((getError) => {
+  //       console.error("Error fetching existing cart data", getError);
+  //     });
+  // }, [cart]); // Dependency array includes cart
+  
+
+
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  <div className="cart-item-card-container-section">
+  <div className="cart-item-image-section">
+    <img src={i.colorImage} alt="" className="cart-image-section" />
+  </div>
+  <div className="cart-item-contant-section">
+    <h5 className="cart-item-name">{i.name}</h5>
+    <p className="cart-item-price-section">{i.price}</p>
+    <p className="cart-item-old-price-section">
+      <s>{i.old_price}</s>
+    </p>
+    <p className="price-percantage-off">72% oFF</p>
+    <div className="increase-descrease-button">
+      <button>-</button>
+      <p className="amount-section">{i.amount}</p>
+      <button>+</button>
+    </div>
+  </div>
+  <div className="remove-container-section">
+    <FaRegTrashAlt />
+    <span>{i.colorTextName}</span>
+  </div>
+  
+</div>

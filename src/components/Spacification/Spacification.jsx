@@ -54,7 +54,7 @@ const Spacification = () => {
   };
 
   const { Spacification_paragraph } = singleProduct;
-  console.log(Spacification_paragraph);
+  // console.log(Spacification_paragraph);
 
   return (
     <div>

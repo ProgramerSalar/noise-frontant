@@ -1,0 +1,27 @@
+{
+    "cartItem": [
+    
+      {
+        "id": "1Fern_Green2",
+        "name": "Buds_Explore",
+        "price": "1399",
+        "old_price": "3999",
+        "quantity": "2",
+        "amount": 2,
+        "colorImage": "../assets/Product/Headphone/Buds_Explore/fern-Green/one.png",
+        "colorTextName": "Fern_Green"
+      },
+
+      {
+        "id": "1Fern_Green2",
+        "name": "Buds_Explore",
+        "price": "1399",
+        "old_price": "3999",
+        "quantity": "2",
+        "amount": 2,
+        "colorImage": "../assets/Product/Headphone/Buds_Explore/fern-Green/one.png",
+        "colorTextName": "Fern_Green"
+      }
+    
+  ]
+}

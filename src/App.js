@@ -7,7 +7,9 @@ import Collection from "./pages/Collection"
 import ProductDetails from "./components/ProductDetails/Headphone/ProductDetails"
 import Hot_Selling_Gadgets from "./components/collection/Hot_Selling_Gadgets"
 import CategoryDetailsitem from "./components/CategoryDetailsitem"
-import AddTOCart from "./pages/AddTOCart"
+import Cart from "./pages/AddTOCart"
+import CheckoutCart from "./components/Spacification/CheckoutCart"
+
 
 const App = () => {
   return (
@@ -21,7 +23,8 @@ const App = () => {
       <Route path="/product-details/:id" element={<ProductDetails/>} />
       <Route path="/hot-selling-product-collection" element={<Hot_Selling_Gadgets/>} />
       <Route path="/category-card-details-item" element={<CategoryDetailsitem/>} />
-      <Route path="/add-to-cart-noise" element={<AddTOCart/>} />
+      <Route path="/add-to-cart-noise" element={<Cart/>} />
+      <Route path="/checkout-using-add-to-cart-noise-online" element={<CheckoutCart/>} />
       </Routes>
       </BrowserRouter>
   )

@@ -27,12 +27,17 @@ import Disclaimer from "../../Spacification/Disclaimer";
 import Spacification from "../../Spacification/Spacification";
 import Heading from "../../CustomerReview/Heading";
 import Review from "../../CustomerReview/Review";
+import ProductContant from "./ProductContant";
+import ColorAndQuantity from "./ColorAndQuantity";
+import { useCartContext } from "../../../context/Cart_Context";
 
 const API = "http://localhost:9000/product_details";
 
 const ProductDetails = () => {
   const { singleProduct, isSingleLoading, getSingleProduct } =
     useProductContext();
+
+    const {addtoCart} = useCartContext()
 
   // const {default_image} = singleProduct;
   const {
@@ -53,6 +58,13 @@ const ProductDetails = () => {
 
   // console.log("ColorType", Reviews);
 
+  const product = {
+    name,
+    price,
+    old_price,
+    quantity
+  }
+  // console.log("product", product)
 
   const { id } = useParams();
 
@@ -61,13 +73,29 @@ const ProductDetails = () => {
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
   const [carouselImages, setCarouselImages] = useState();
 
-
-  const [amount, setAmount] = useState(1)
-  // console.log("amount", amount)
-
   
 
+
+
+  const [colorImage, setColor] = useState()
+  const [ColorTextName, setColorTextName] = useState()
+  // console.log("color", colorImage)
+  // console.log("colorTypeText", ColorTextName)
+
+  const color = {
+    colorImage,
+    ColorTextName
+  }
+  // console.log(color)
+
+  const [amount, setAmount] = useState(1);
+  // console.log("amount", amount)
+
   const [colortype, setColorType] = useState();
+
+
+
+  
 
   const handleImageClick = (colorType) => {
     const selectedColorDetails = color_Type.find(
@@ -81,21 +109,24 @@ const ProductDetails = () => {
 
     // console.log("colorType", colorType)
     setColorType(colorType);
+    // console.log("setColorTyp", colorType)
+    
   };
 
-  console.log("color", color_Type)
 
-  const addtoCart = () => {
+  
 
-  }
+  // console.log("color", color_Type)
+
+
 
   const setDescreased = () => {
-    amount > 1 ? setAmount(amount - 1) : setAmount(1)
-  }
+    amount > 1 ? setAmount(amount - 1) : setAmount(1);
+  };
 
   const setIncreased = () => {
-    amount < quantity ? setAmount(amount + 1 ) : setAmount(quantity)
-  }
+    amount < quantity ? setAmount(amount + 1) : setAmount(quantity);
+  };
 
   useEffect(() => {
     getSingleProduct(`${API}/${id}`);
@@ -105,7 +136,6 @@ const ProductDetails = () => {
     <div className="product-details">
       <Navbar />
 
-      {/* <CrouselProduct  carouselImages={defaultCarouselImages}/> */}
       <div className="product-container-section">
         {/* crousel image  */}
         {isCarouselOpen ? (
@@ -116,6 +146,7 @@ const ProductDetails = () => {
 
         <div className="product-details-container-section">
           <div className="product-details-card">
+            {/* product details  */}
             <div className="product-details-container">
               <Col_One
                 name={name}
@@ -127,45 +158,30 @@ const ProductDetails = () => {
               />
             </div>
 
+            {/* salacted color name and color Image add to the card try here  */}
+            {/* <div>
+              <img src={colorImage} alt=""  />
+              <span>{ColorTextName}</span>
+            </div> */}
+
             <div className="color-and-buy-section">
-              <div className="color-and-buy-container-section">
-                <div className="color-tag">
-                  <p>Color:</p>
+              {/* color and quantity section  */}
 
-                  <span>{colortype ? colortype : default_color_type}</span>
-                </div>
-
-                <div className="buy-and-color-container">
-                  {color_Type.map((i) => (
-                    <div
-                      className="color-container"
-                      onClick={() => handleImageClick(i["color_type"])}
-                    >
-                      <div className="image-of-product">
-                        <img src={i.image} alt="" />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="quntity-and-buy-container">
-                  <h2>Quantity</h2>
-                  <div className="quantity-buy-section">
-                    <div className="quantity">
-                      <button onClick={() => setDescreased()}>-</button>
-                      <span>{amount}</span>
-                      <button onClick={() => setIncreased()}>+</button>
-                    </div>
-                    <div className="buy-container">
-                      <NavLink to="/add-to-cart-noise"
-                      onClick={() => addtoCart(id, singleProduct)}
-                      >
-                      <button>Buy Now</button>
-
-                      </NavLink>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ColorAndQuantity
+                colortype={colortype}
+                default_color_type={default_color_type}
+                color_Type={color_Type}
+                handleImageClick={handleImageClick}
+                setDescreased={setDescreased}
+                setIncreased={setIncreased}
+                amount={amount}
+                addtoCart={addtoCart}
+                id={id}
+                product={product}
+                setColor={setColor}
+                setColorTextName={setColorTextName}
+                color={color}
+              />
 
               <Privacy />
             </div>
@@ -173,80 +189,9 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      <div className="image-container">
-        {/* image section first  */}
-
-        {content_Image.map((i) => {
-          // console.log("i", i)
-          return i.content_1.map((item) => {
-            // console.log("item", item)
-            return (
-              <div className="product-overview-image">
-                {/* <h2>hello world</h2> */}
-                <img src={item} alt="image" />
-              </div>
-            );
-          });
-        })}
-
-        {/* video section  */}
-
-        {content_Image.map((i) => {
-          // console.log("video", i)
-          return i.content_2
-            ? i.content_2.map((video_item) => {
-                return (
-                  <div className="product-overview-image">
-                    <video
-                      loop
-                      autoPlay
-                      muted
-                      src={video_item}
-                      alt="video"
-                    ></video>
-                  </div>
-                );
-              })
-            : null;
-        })}
-
-        {/* second image  */}
-
-        {content_Image.map((i) => {
-          return i.content_3
-            ? i.content_3.map((image_item) => {
-                return (
-                  <div className="product-overview-image">
-                    {/* <h2>hello world</h2> */}
-                    <img src={image_item} alt="image" />
-                  </div>
-                );
-              })
-            : null;
-        })}
-
-        {/* crousel item  */}
-
-        {content_Image.map((i) => {
-          console.log("contantImage", content_Image);
-          return i.content_4 ? (
-            <ProductContantCrousel crousel_image={i.content_4} />
-          ) : null;
-        })}
-
-        {content_Image.map((i) => {
-          return i.content_5
-            ? i.content_5.map((item) => {
-                // console.log("item", item)
-                return (
-                  <div className="product-overview-image">
-                    {/* <h2>hello world</h2> */}
-                    <img src={item} alt="image" />
-                  </div>
-                );
-              })
-            : null;
-        })}
+      {/* product Contant  */}
+      <div>
+        <ProductContant content_Image={content_Image} />
       </div>
 
       <Spacification />

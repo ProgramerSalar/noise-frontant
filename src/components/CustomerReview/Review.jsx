@@ -16,7 +16,7 @@ const Review = ({Reviews}) => {
             
             Reviews ? (
                 Reviews.map((i) => {
-                    console.log(i.name)
+                    // console.log(i.name)
     
                     return(
                         <ReviewCard review={i}/>
