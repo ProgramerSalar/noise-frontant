@@ -10,21 +10,16 @@ import Navbar from "../components/NavBar";
 
 const Cart = () => {
   // const {addtoCart} = useCartContext()
-  const { cart } = useCartContext();
+  const { cart, clearCart, total_price } = useCartContext();
   // const [hasPosted, setHasPosted] = useState(false);
 
   console.log("cart", cart);
 
-  const data = Data;
-  console.log("data", data);
 
-  let id = cart.id;
-  const color = cart.color;
-  const amount = cart.amount;
+  
 
-  const checkout = (id, color, amount) => {
-    return id, color, amount;
-  };
+
+ 
 
   return (
     <div className="cart-main-container">
@@ -34,9 +29,11 @@ const Cart = () => {
         <hr />
         <div className="cart-in-which-found-the-all-item">
           {cart.map((i) => {
-            // console.log("i", i)
-            return <CartItemCard i={i} />;
+            console.log("i", i)
+            return <CartItemCard key={i.id} {...i} />;
           })}
+
+        
         </div>
         <div className="privacy-cart-section">
           <Privacy />
@@ -47,6 +44,13 @@ const Cart = () => {
           <button>checkout</button>
         </NavLink>
       </div>
+      <div className="clear-cart">
+        <button onClick={clearCart}>clear cart</button>
+      </div>
+      <div className="total-price">
+        <p>{total_price}</p>
+      </div>
+
     </div>
   );
 };

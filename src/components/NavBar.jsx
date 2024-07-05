@@ -2,10 +2,12 @@ import React from 'react'
 import { CiSearch } from 'react-icons/ci';
 import { IoBagOutline, IoPersonOutline } from 'react-icons/io5';
 import logo from "../assets/Image/logo.png"
+import { useCartContext } from '../context/Cart_Context';
 
 
 const Navbar = () => {
 
+    const {total_item} = useCartContext()
 
 
 
@@ -38,7 +40,10 @@ const Navbar = () => {
         <div className="navbar-button">
             <div className="col-1">
                 <a className='navbar-icon'  href=""><CiSearch /></a>
-                <a className='navbar-icon' href="/add-to-cart-noise"><IoBagOutline /></a>
+                <a className='navbar-icon' href="/add-to-cart-noise"><IoBagOutline />
+                <span>
+                {total_item}    
+                </span></a>
                 <a className='navbar-icon' href=""><IoPersonOutline /></a>
             </div>
 
