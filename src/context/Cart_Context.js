@@ -1,13 +1,26 @@
-import {createContext, useContext, useReducer} from "react"
+import {createContext, useContext, useEffect, useReducer} from "react"
 import reducer from "../reducer/CartReducer"
 
 
 const CartContext = createContext()
 
 
+const getLocalCartData = () => {
+
+    let localCartData = localStorage.getItem("manishCart")
+    if(!localCartData || JSON.parse(localCartData).length === 0){
+        return []
+    }
+    else{
+        return JSON.parse(localCartData)
+    }
+}
+
+
 const initialState = {
-    cart : [],
-    total_amount : "",
+    // cart : [],
+    cart : getLocalCartData(),
+    total_amount : "", 
     total_item: "",
     shipping_fee : 200,
 }
@@ -25,6 +38,14 @@ const CartProvider = ({children}) => {
             }
         )
     }
+
+
+    // to add the data in localstorage 
+    useEffect(() => {
+
+        localStorage.setItem("manishCart", JSON.stringify(state.cart))
+
+    }, [state.cart])
 
 
 

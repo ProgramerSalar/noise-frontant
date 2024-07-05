@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="navbar-button">
             <div className="col-1">
                 <a className='navbar-icon'  href=""><CiSearch /></a>
-                <a className='navbar-icon' href=""><IoBagOutline /></a>
+                <a className='navbar-icon' href="/add-to-cart-noise"><IoBagOutline /></a>
                 <a className='navbar-icon' href=""><IoPersonOutline /></a>
             </div>
 
