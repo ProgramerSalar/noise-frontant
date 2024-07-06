@@ -5,13 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { AppPrivider } from "./context/productContext";
 import { CartProvider } from "./context/Cart_Context";
+import { CheckoutProvider } from "./context/checkout_context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <AppPrivider>
     <React.StrictMode>
       <CartProvider>
+        <CheckoutProvider>
         <App />
+
+        </CheckoutProvider>
       </CartProvider>
     </React.StrictMode>
   </AppPrivider>

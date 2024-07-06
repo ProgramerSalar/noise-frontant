@@ -1,0 +1,286 @@
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .checkout-container {
+    // background-color: green;
+    // margin: 1rem;
+    max-width: 460px;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: gray;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 42vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+  .checkout-container {
+    // background-color: green;
+    // margin: 1rem;
+    max-width: 460px;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: gray;
+    // margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5vw;
+    // height: 200px;
+    margin: auto;
+    margin-top: 5rem;
+    border: solid rgb(214, 196, 196) 1px;
+    padding: 2rem;
+    border-radius: 3rem;
+    justify-content: center;
+
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .checkout-container {
+    // background-color: green;
+    // margin: 1rem;
+    max-width: 460px;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: gray;
+    // margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5vw;
+    // height: 200px;
+    margin: auto;
+    margin-top: 5rem;
+    border: solid rgb(214, 196, 196) 1px;
+    padding: 2rem;
+    border-radius: 3rem;
+  }
+}
+
+
+.checkout-main-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+}
+
+.main-container-saction-in-checkou {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+}
+
+.checkout-heading-section {
+  display: flex;
+  margin: 0.5rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border: solid rgb(192, 177, 177) 1px;
+  padding: 1rem;
+  border-radius: 5px;
+
+  img {
+    width: 4rem;
+  }
+
+  p {
+    opacity: 0.7;
+  }
+}
+
+.discount-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(186, 201, 157);
+
+  p {
+    img {
+      width: 1.5rem;
+      border-radius: 20%;
+    }
+
+    font-size: 0.8rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    opacity: 0.7;
+    gap: 5px;
+    color: green;
+  }
+}
+
+.ordersummery {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 3rem;
+  border: solid rgb(170, 154, 154) 1px;
+  padding: 1.5rem;
+  background-color: rgb(21, 37, 32);
+  border-radius: 1rem;
+
+  svg {
+    font-size: 1.3rem;
+  }
+}
+
+.ruppie-symbool {
+  // color: green;
+  // background-color: grey;
+  margin-left: 5rem;
+}
+
+.middle-section {
+  margin-top: 5rem;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // margin: auto;
+
+  div {
+    
+    
+    h4 {
+      margin-bottom: 1rem;
+      opacity: 0.8;
+    //   margin: auto;
+    justify-content: center;
+    text-align: center;
+    
+    }
+  }
+}
+
+.input-tag {
+  border: solid black 1px;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.mobile-number-input {
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+}
+
+.mobile-number-input::placeholder {
+  font-size: 1.2rem;
+}
+
+.salected-tag {
+  //    background-color: green;
+  display: flex;
+  margin-top: 0.5rem;
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.heading-address-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h4{
+        font-weight: lighter;
+        // opacity: 1;
+    }
+
+
+}
+
+.midentry-fields{
+    font-size: 0.7rem;
+    color: rgb(231, 19, 19);
+}
+
+.input-address-section{
+    display: flex;
+    flex-direction: column;
+
+    input{
+        padding: 1rem;
+        outline: none;
+        border: none;
+        background-color: white;
+        border: solid rgb(182, 146, 146) 1px;
+        border-radius: 0.5rem;
+        margin: 0.5rem 0;
+        
+    }
+}
+
+.Enter-pincode{
+    width: 15rem;
+}
+
+.city-state{
+    display: flex;
+    gap: 1rem;
+    // background-color: gray;
+
+    input{
+        width: 10rem;
+
+    }
+
+}
+
+
+.fullname-address{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.checkout-button {
+  display: flex;
+  justify-content: center;
+  // background-color: green;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  flex-direction: row;
+  padding: 1rem 6rem;
+  margin-top: 5rem;
+  background-color: rgb(14, 3, 3);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  gap: 0.5rem;
+  opacity: 0.7;
+  cursor: pointer;
+}

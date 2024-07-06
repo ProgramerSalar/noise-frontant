@@ -1,21 +1,46 @@
-import { Children, createContext, useContext, useReducer } from "react";
-import reducer from "../reducer/CartReducer"
+import { createContext, useContext, useEffect, useReducer } from "react";
+import reducer from "../reducer/checkoutReducer";
 
+const CheckoutContext = createContext();
 
-
-const CheckoutContext = createContext()
-
+const getLocalCheckoutData = () => {
+  let localCartData = localStorage.getItem("manishCart");
+  if (!localCartData || JSON.parse(localCartData).length === 0) {
+    return [];
+  } else {
+    return JSON.parse(localCartData);
+  }
+};
 
 const initialState = {
-    checkout : [],
-    total_amount : "",
-    total_item : "", 
-    shipping_fee: 200
-}
+  checkout: getLocalCheckoutData(),
+};
 
-const CheckoutProvider = ({children}) => {
-    
-    cosnt [state, dispatch] = useReducer(reducer, initialState)
+const CheckoutProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, initialState);
 
-    const addtoCart
-}
+  const checkoutHandler = (id, total_price) => {
+    dispatch({
+      type: "CHECKOUT_PAGE_HANDLER",
+      payload: { id, total_price },
+    });
+    // console.log("idr", id)
+  };
+
+
+  useEffect(() => {
+    localStorage.setItem("manishCart", JSON.stringify(state.checkout));
+  }, [state.checkout])
+
+  return (
+    <CheckoutContext.Provider value={{ ...state, checkoutHandler }}>
+      {children}
+    </CheckoutContext.Provider>
+  );
+};
+
+const useCheckoutContext = () => {
+  return useContext(CheckoutContext);
+};
+
+export { CheckoutProvider, useCheckoutContext };

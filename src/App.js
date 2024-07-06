@@ -9,6 +9,7 @@ import Hot_Selling_Gadgets from "./components/collection/Hot_Selling_Gadgets"
 import CategoryDetailsitem from "./components/CategoryDetailsitem"
 import Cart from "./pages/AddTOCart"
 import CheckoutCart from "./components/Spacification/CheckoutCart"
+import Payment from "./pages/Payment"
 
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
       <Route path="/category-card-details-item" element={<CategoryDetailsitem/>} />
       <Route path="/add-to-cart-noise" element={<Cart/>} />
       <Route path="/checkout-using-add-to-cart-noise-online" element={<CheckoutCart/>} />
+      <Route path="/noise-payment-system" element={<Payment/>} />
+      
       </Routes>
       </BrowserRouter>
   )

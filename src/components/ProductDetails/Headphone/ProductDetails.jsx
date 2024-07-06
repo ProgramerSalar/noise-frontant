@@ -37,7 +37,7 @@ const ProductDetails = () => {
   const { singleProduct, isSingleLoading, getSingleProduct } =
     useProductContext();
 
-    const {addtoCart} = useCartContext()
+  const { addtoCart } = useCartContext();
 
   // const {default_image} = singleProduct;
   const {
@@ -62,8 +62,8 @@ const ProductDetails = () => {
     name,
     price,
     old_price,
-    quantity
-  }
+    quantity,
+  };
   // console.log("product", product)
 
   const { id } = useParams();
@@ -73,29 +73,21 @@ const ProductDetails = () => {
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
   const [carouselImages, setCarouselImages] = useState();
 
-  
-
-
-
-  const [colorImage, setColor] = useState()
-  const [ColorTextName, setColorTextName] = useState()
+  const [colorImage, setColor] = useState();
+  const [ColorTextName, setColorTextName] = useState();
   // console.log("color", colorImage)
   // console.log("colorTypeText", ColorTextName)
 
   const color = {
     colorImage,
-    ColorTextName
-  }
+    ColorTextName,
+  };
   // console.log(color)
 
   const [amount, setAmount] = useState(1);
   // console.log("amount", amount)
 
   const [colortype, setColorType] = useState();
-
-
-
-  
 
   const handleImageClick = (colorType) => {
     const selectedColorDetails = color_Type.find(
@@ -110,15 +102,9 @@ const ProductDetails = () => {
     // console.log("colorType", colorType)
     setColorType(colorType);
     // console.log("setColorTyp", colorType)
-    
   };
 
-
-  
-
   // console.log("color", color_Type)
-
-
 
   const setDescreased = () => {
     amount > 1 ? setAmount(amount - 1) : setAmount(1);
