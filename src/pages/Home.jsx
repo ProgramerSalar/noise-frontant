@@ -17,6 +17,8 @@ import { useContext } from "react";
 import { AppContext, useProductContext } from "../context/productContext";
 
 const Home = () => {
+
+  // console.log(window)
   return (
     <div className="home-container">
       {/* navbar container  */}

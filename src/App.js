@@ -10,6 +10,7 @@ import CategoryDetailsitem from "./components/CategoryDetailsitem"
 import Cart from "./pages/AddTOCart"
 import CheckoutCart from "./components/Spacification/CheckoutCart"
 import Payment from "./pages/Payment"
+import PaymentSuccess from "./pages/PaymentSuccess"
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
       <Route path="/add-to-cart-noise" element={<Cart/>} />
       <Route path="/checkout-using-add-to-cart-noise-online" element={<CheckoutCart/>} />
       <Route path="/noise-payment-system" element={<Payment/>} />
+      <Route  path="/paymentsuccess" element={<PaymentSuccess/>}/>
       
       </Routes>
       </BrowserRouter>

@@ -104,6 +104,9 @@ const ProductDetails = () => {
     // console.log("setColorTyp", colorType)
   };
 
+
+  
+
   // console.log("color", color_Type)
 
   const setDescreased = () => {

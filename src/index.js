@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { AppPrivider } from "./context/productContext";
 import { CartProvider } from "./context/Cart_Context";
 import { CheckoutProvider } from "./context/checkout_context";
+import { PaymentProvider } from "./context/payment_context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,7 +14,10 @@ root.render(
     <React.StrictMode>
       <CartProvider>
         <CheckoutProvider>
-        <App />
+          <PaymentProvider>
+          <App />
+
+          </PaymentProvider>
 
         </CheckoutProvider>
       </CartProvider>

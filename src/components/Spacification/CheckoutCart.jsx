@@ -8,10 +8,21 @@ import { CiShoppingCart } from "react-icons/ci";
 import CheckoutFooter from "../CheckoutFooter";
 import { NavLink } from "react-router-dom";
 import CheckoutHeader from "../CheckoutHeader";
+import { usePaymentContext } from "../../context/payment_context";
 
 const CheckoutCart = () => {
   const { checkout } = useCheckoutContext();
-  console.log("id", checkout.total_price);
+  // console.log("id", checkout.total_price);
+
+  const id = checkout.map((i) => i.id)
+  const total_price = checkout.map((i) => i.total_price)
+
+  
+  const paymentHandler = usePaymentContext()
+
+
+
+  
   // console.log("id", id)
   return (
     <div className="checkout-container">
@@ -25,7 +36,7 @@ const CheckoutCart = () => {
             <p>order-summary</p>
             <p className="ruppie-symbool">₹</p>
             {checkout.map((i) => {
-              console.log("totalPrice", i.total_price);
+              // console.log("totalPrice", i.total_price);
               return <span>{i.total_price}</span>;
             })}
           </div>
@@ -66,7 +77,7 @@ const CheckoutCart = () => {
             </div>
           </div>
 
-          <NavLink to="/noise-payment-system">
+          <NavLink to="/noise-payment-system" onClick={() => paymentHandler(id, total_price)} >
           <button className="checkout-button">
             Continue
             <FaArrowRightLong />
