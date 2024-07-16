@@ -1,0 +1,163 @@
+
+
+
+
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+  a {
+    // font-size: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+
+  h3 {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 1rem 0;
+
+  }
+
+  h2{
+    margin-left: 3vw;
+
+  }
+
+
+
+  .footer-both-section{
+    margin: 2rem;
+    line-height: 1.5rem;
+    border-bottom:1px solid rgb(151, 130, 130);
+    
+    
+  }
+
+  .both-section {
+    margin: 8rem 0;
+  }
+
+  .smart-watches-container {
+    margin: 2rem 0;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+  }
+
+  .shop-by-price-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shop-by-features-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .shop-by-gender-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wireless-Earbuds-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .price-and-feature-container {
+    margin: 2rem 0;
+    display: flex;
+    // gap: 3vw;
+    justify-content: space-around;
+  }
+
+  .Shop-by-price-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Shop-by-features-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  a {
+    // font-size: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+
+  h3 {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 1rem 0;
+  }
+
+  h2{
+    margin-left: 3vw;
+
+  }
+  
+
+  
+  .footer-both-section{
+    margin: 2rem;
+    line-height: 1.5rem;
+    border-bottom:1px solid rgb(151, 130, 130);
+
+    
+  }
+
+  .both-section {
+    margin: 8rem 0;
+  }
+
+  .smart-watches-container {
+    margin: 2rem 0;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+  }
+
+  .shop-by-price-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shop-by-features-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .shop-by-gender-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wireless-Earbuds-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+  }
+
+  .price-and-feature-container {
+    margin: 2rem 0;
+    display: flex;
+    // gap: 3vw;
+    justify-content: space-around;
+  }
+
+  .Shop-by-price-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Shop-by-features-section {
+    display: flex;
+    flex-direction: column;
+  }
+}

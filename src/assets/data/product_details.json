@@ -1,0 +1,38 @@
+{
+  "product_details": [
+    {
+      "id": "1",
+      "name": "ColorFit Pro 5 Max",
+      "desc": "1.96 Amoled, VO₂ Max & Rapid Health, Customized Button, SOS Alerts, DIY Watchfaces",
+      "price": "$2,999",
+      "old-price": "9,999",
+      "rating": "4.5",
+      "rating-count": "(51)",
+      "quantity": "2",
+      "image": "src\\assets\\product_details\\one.png",
+      "Type": [
+        {
+          "type": "Metal",
+          "image":"src\\assets\\product_details\\seven.png",
+          "Metal": [
+            {
+              "Elite Silver": [
+                "src\\assets\\product_details\\one.png",
+                "src\\assets\\product_details\\two.png",
+                "src\\assets\\product_details\\three.png",
+                "src\\assets\\product_details\\four.png",
+                "src\\assets\\product_details\\five.png",
+                "src\\assets\\product_details\\six.png",
+                "src\\assets\\product_details\\seven.png"
+              ],
+              "color": "Elite Silver"
+            }
+          ]
+        }
+
+
+
+      ]
+    }
+  ]
+}
