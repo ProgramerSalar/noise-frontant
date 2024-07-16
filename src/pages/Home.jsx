@@ -69,7 +69,7 @@ const Home = () => {
 
 
 
-      G:\noise_clone\duplicate_File\noise_clone\noise\src\assets\data\blog.json
+      
     </div>
   );
 };
