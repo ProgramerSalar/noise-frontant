@@ -1,0 +1,39 @@
+{
+	"categories": [
+		{
+			"id": "1",
+			"name": "Smartwatches",
+			"image": "./assets/Image/category-image/smartwatch.png"
+		},
+		{
+			"id": "2",
+			"name": "Wireless Earbuds",
+			"image": "../assets/Image/category-image/2._Wireless_Earbuds.png"
+		},
+		{
+			"id": "4",
+			"name": "Straps",
+			"image": "./assets\\Image\\category-image\\4._Stunning_Straps.png"
+		},
+		{
+			"id": "6",
+			"name": "Headphones",
+			"image": "./assets\\Image\\category-image\\6._Headphones.png"
+		},
+		{
+			"id": "7",
+			"name": "Speakers",
+			"image": "./assets\\Image\\category-image\\7._BT_Speakers.png"
+		},
+		{
+			"id": "8",
+			"name": "Gift Store",
+			"image": "./assets\\Image\\category-image\\3._Gift_Store.png"
+		},
+		{
+			"id": "9",
+			"name": "Luna Ring",
+			"image": "./assets\\Image\\category-image\\5._Luna_Ring.jpg"
+		}
+	]
+}
