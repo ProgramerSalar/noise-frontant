@@ -1,3 +1,7 @@
+.ordersummery{
+  background-color: white;
+}
+
 @media screen and (min-width: 0px) and (max-width: 450px) {
   .checkout-container {
     // background-color: green;
@@ -89,7 +93,11 @@
   border-radius: 5px;
 
   img {
-    width: 4rem;
+    width: 5rem;
+    height:1.5rem ;
+    // padding: 1rem;
+    background-color: black;
+    // color: black;
   }
 
   p {
@@ -132,7 +140,7 @@
   margin-top: 3rem;
   border: solid rgb(170, 154, 154) 1px;
   padding: 1.5rem;
-  background-color: rgb(21, 37, 32);
+  // background-color: rgb(21, 37, 32);
   border-radius: 1rem;
 
   svg {

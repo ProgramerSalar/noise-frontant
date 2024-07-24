@@ -105,11 +105,11 @@ const Testimonials = () => {
                 >
                   <div className="about-the-product-contant">
                     <p>Our Products</p>
-                    <a href="">Smart Watches</a>
-                    <a href="">Wireless Earbuds</a>
-                    <a href="">Luna Smart Ring</a>
-                    <a href="">NoiseFit App</a>
-                    <a href="">Noise Gift Card</a>
+                    <span    href="">Smart Watches</span>
+                    <span   href="">Wireless Earbuds</span>
+                    <span   href="">Luna Smart Ring</span>
+                    <span     href="">NoiseFit App</span>
+                    <span   href="">Noise Gift Card</span>
                   </div>
                 </div>
               </div>
@@ -143,9 +143,9 @@ const Testimonials = () => {
                 >
                   <div className="about-the-product-contant">
                     <p>For Business</p>
-                    <a href="">Noise for Business</a>
-                    <a href="">Corporate Enquiries</a>
-                    <a href="">Brand Partnership Enquiries</a>
+                    <span   href="">Noise for Business</span>
+                    <span   href="">Corporate Enquiries</span>
+                    <span   href="">Brand Partnership Enquiries</span>
                   </div>
                 </div>
               </div>
@@ -179,10 +179,10 @@ const Testimonials = () => {
                 >
                   <div className="about-the-product-contant">
                     <p>About Noise</p>
-                    <a href="">About Us</a>
-                    <a href="">Blogs</a>
-                    <a href="">Careers</a>
-                    <a href="">In the Press</a>
+                    <span   href="">About Us</span>
+                    <span   href="">Blogs</span>
+                    <span   href="">Careers</span>
+                    <span  href="">In the Press</span>
                   </div>
                 </div>
               </div>
@@ -213,9 +213,9 @@ const Testimonials = () => {
                 >
                   <div className="about-the-product-contant">
                     <p>Legal</p>
-                    <a href="">Terms & Conditions</a>
-                    <a href="">Privicy Policy</a>
-                    <a href="">Social Responsibility</a>
+                    <span   href="">Terms & Conditions</span>
+                    <span   href="">Privicy Policy</span>
+                    <span   href="">Social Responsibility</span>
                   </div>
                 </div>
               </div>
@@ -246,9 +246,9 @@ const Testimonials = () => {
                 >
                   <div className="about-the-product-contant">
                     <p>Legal</p>
-                    <a href="">Terms & Conditions</a>
-                    <a href="">Privicy Policy</a>
-                    <a href="">Social Responsibility</a>
+                    <span   href="">Terms & Conditions</span>
+                    <span   href="">Privicy Policy</span>
+                    <span   href="">Social Responsibility</span>
                   </div>
                 </div>
               </div>

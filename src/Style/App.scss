@@ -26,6 +26,16 @@
   src: url('../assets/font/site-wise-font-noise.ttf');
 }
 
+p{
+  color: black;
+}
+
+a{
+  color: black;
+}
+span{
+  color: black;
+}
 
 * {
   padding: 0;
@@ -58,6 +68,7 @@ a {
 
 
 .home-container{
-  background: white;
+  // background: rgb(146, 139, 134);
+  background-color: white;
   // background: radial-gradient(#fff, #ffd6d6);
 }

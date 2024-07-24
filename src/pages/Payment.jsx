@@ -49,9 +49,20 @@ console.log('Total Price:', total_price);
 
   const PayHandler = async (amount) => {
 
-    const {data:{key}} = await axios.get(`${import.meta.env.VITE_BACKENT_URL}/api/getkey`)
+    // const API = `${import.meta.env.VITE_BACKENT_URL}/api/api/getkey`
+    // console.log("PYmentAPI", API)
 
-    const {data:{order}} = await axios.post(`${import.meta.env.VITE_BACKENT_URL}/api/checkout`,{amount})
+
+
+    // const {data:{key}} = await axios.get(`http://localhost:9000/api/api/getkey`)
+    // http://localhost:9000/api/getkey
+    const {data:{key}} = await axios.get(`http://api.gnoise324.online/api/api/getkey`)
+    
+    console.log("PaymentData", {data:{key}})
+
+
+    // const {data:{order}} = await axios.post(`http://localhost:9000/api/api/checkout`,{amount})
+    const {data:{order}} = await axios.post(`http://api.gnoise324.online/api/api/checkout`,{amount})
     
 
 
@@ -63,7 +74,9 @@ console.log('Total Price:', total_price);
       "description": "Tutorial of RezorPay",
       "image": "https://www.gonoise.com/cdn/shop/files/Group_4_df1f4045-5a8c-4b00-94bb-a6622f06f7da.png?v=1696847023",
       "order_id": order.id, //This is a sample Order ID. Pass the `id` obtained in the previous step
-      "callback_url":"http://localhost:9000/api/paymentVerification",
+      // "callback_url":"http://api.gnoise324.online/api/api/paymentVerification",
+      "callback_url":"http://localhost:5173/hot-selling-product-collection",
+      // "callback_url":"payment success fully",
       "prefill": {
           "name": "",
           "email": "",
@@ -101,7 +114,7 @@ console.log('Total Price:', total_price);
           </p>
 
           <div className="payment-section-container">
-            <div className="upi-payment-section">
+            {/* <div className="upi-payment-section">
               <div className="payment-section">
                 <img className="payment-logo" src={phonePe} alt="" />
                 <p className="name-of-the-payment">PhonePe</p>
@@ -118,7 +131,7 @@ console.log('Total Price:', total_price);
                 <img className="payment-logo" src={upi} alt="" />
                 <p className="name-of-the-payment">Any UPI</p>
               </div>
-            </div>
+            </div> */}
             <div className="pay-upi-id">
               {/* <div className="upi-id-with-text">
                 <div className="all-input-things-are-here">
@@ -131,6 +144,9 @@ console.log('Total Price:', total_price);
               </div> */}
               <div
                 className="pay-with-cards"
+                style={{
+                  cursor:"pointer"
+                }}
                 onClick={() => PayHandler(amount)}
               >
                 <div className="logo-of-the-card">

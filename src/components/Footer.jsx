@@ -53,25 +53,25 @@ const Footer = () => {
                       <div className="smart-watches-container">
                         <div className="shop-by-price-section">
                           <h3>Shop by Price</h3>
-                          <a href="">Smart Watches Under 2000</a>
-                          <a href="">Smart Watches Under 3000</a>
-                          <a href="">Smart Watches Under 4000</a>
-                          <a href="">Smart Watches Above 5000</a>
+                          <span  href="">Smart Watches Under 2000</span>
+                          <span href="">Smart Watches Under 3000</span>
+                          <span href="">Smart Watches Under 4000</span>
+                          <span href="">Smart Watches Above 5000</span>
                         </div>
                         <div className="shop-by-features-section">
                           <h3>Shop by Features</h3>
-                          <a href="">Smart Watches with Alexa</a>
-                          <a href="">AMOLED Display Smart Watches</a>
-                          <a href="">Round Deal Smart Watches</a>
-                          <a href="">Metallic & eather Smart Watches</a>
-                          <a href="">BT Calling Smart Watches</a>
-                          <a href="">Android Smart Watches</a>
+                          <span href="">Smart Watches with Alexa</span>
+                          <span href="">AMOLED Display Smart Watches</span>
+                          <span href="">Round Deal Smart Watches</span>
+                          <span href="">Metallic & eather Smart Watches</span>
+                          <span href="">BT Calling Smart Watches</span>
+                          <span href="">Android Smart Watches</span>
                         </div>
                         <div className="shop-by-gender-section">
                           <h3>Shop by Gender</h3>
-                          <a href="">Smart Watches for Men</a>
-                          <a href="">Smart Watches for Woman</a>
-                          <a href="">Smart Watches for Kids</a>
+                          <span href="">Smart Watches for Men</span>
+                          <span href="">Smart Watches for Woman</span>
+                          <span href="">Smart Watches for Kids</span>
                         </div>
                       </div>
                     </div>
@@ -114,16 +114,16 @@ const Footer = () => {
                       <div className="price-and-feature-container">
                         <div className="Shop-by-price-section">
                           <h3>Shop by Price</h3>
-                          <a href="">Earbuds Under 1000</a>
-                          <a href="">Earbuds Under 1500</a>
-                          <a href="">Earbuds Under 2000</a>
-                          <a href="">Earbuds Under 2500</a>
-                          <a href="">Earbuds Above 2500</a>
+                          <span href="">Earbuds Under 1000</span>
+                          <span href="">Earbuds Under 1500</span>
+                          <span href="">Earbuds Under 2000</span>
+                          <span href="">Earbuds Under 2500</span>
+                          <span href="">Earbuds Above 2500</span>
                         </div>
                         <div className="Shop-by-features-section">
                           <h3>Shop by Features</h3>
-                          <a href="">ANC Earbuds</a>
-                          <a href="">Gaming Earbuds</a>
+                          <span href="">ANC Earbuds</span>
+                          <span href="">Gaming Earbuds</span>
                         </div>
                         <div></div>
                       </div>
@@ -140,25 +140,25 @@ const Footer = () => {
               <div className="smart-watches-container">
                 <div className="shop-by-price-section">
                   <h3>Shop by Price</h3>
-                  <a href="">Smart Watches Under 2000</a>
-                  <a href="">Smart Watches Under 3000</a>
-                  <a href="">Smart Watches Under 4000</a>
-                  <a href="">Smart Watches Above 5000</a>
+                  <span href="">Smart Watches Under 2000</span>
+                  <span href="">Smart Watches Under 3000</span>
+                  <span href="">Smart Watches Under 4000</span>
+                  <span href="">Smart Watches Above 5000</span>
                 </div>
                 <div className="shop-by-features-section">
                   <h3>Shop by Features</h3>
-                  <a href="">Smart Watches with Alexa</a>
-                  <a href="">AMOLED Display Smart Watches</a>
-                  <a href="">Round Deal Smart Watches</a>
-                  <a href="">Metallic & eather Smart Watches</a>
-                  <a href="">BT Calling Smart Watches</a>
-                  <a href="">Android Smart Watches</a>
+                  <span href="">Smart Watches with Alexa</span>
+                  <span href="">AMOLED Display Smart Watches</span>
+                  <span href="">Round Deal Smart Watches</span>
+                  <span href="">Metallic & eather Smart Watches</span>
+                  <span href="">BT Calling Smart Watches</span>
+                  <span href="">Android Smart Watches</span>
                 </div>
                 <div className="shop-by-gender-section">
                   <h3>Shop by Gender</h3>
-                  <a href="">Smart Watches for Men</a>
-                  <a href="">Smart Watches for Woman</a>
-                  <a href="">Smart Watches for Kids</a>
+                  <span href="">Smart Watches for Men</span>
+                  <span href="">Smart Watches for Woman</span>
+                  <span href="">Smart Watches for Kids</span>
                 </div>
               </div>
             </div>
@@ -168,16 +168,16 @@ const Footer = () => {
               <div className="price-and-feature-container">
                 <div className="Shop-by-price-section">
                   <h3>Shop by Price</h3>
-                  <a href="">Earbuds Under 1000</a>
-                  <a href="">Earbuds Under 1500</a>
-                  <a href="">Earbuds Under 2000</a>
-                  <a href="">Earbuds Under 2500</a>
-                  <a href="">Earbuds Above 2500</a>
+                  <span href="">Earbuds Under 1000</span>
+                  <span href="">Earbuds Under 1500</span>
+                  <span href="">Earbuds Under 2000</span>
+                  <span href="">Earbuds Under 2500</span>
+                  <span href="">Earbuds Above 2500</span>
                 </div>
                 <div className="Shop-by-features-section">
                   <h3>Shop by Features</h3>
-                  <a href="">ANC Earbuds</a>
-                  <a href="">Gaming Earbuds</a>
+                  <span href="">ANC Earbuds</span>
+                  <span href="">Gaming Earbuds</span>
                 </div>
                 <div></div>
               </div>
