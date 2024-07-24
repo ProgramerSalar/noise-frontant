@@ -30,15 +30,31 @@ import Review from "../../CustomerReview/Review";
 import ProductContant from "./ProductContant";
 import ColorAndQuantity from "./ColorAndQuantity";
 import { useCartContext } from "../../../context/Cart_Context";
+// import {defineConfig} from "vite";
 
 // const API = "http://localhost:9000/product_details";
-const API = `${import.meta.env.VITE_BACKENT_URL}/product_details`;
+// const API = `${import.meta.env.VITE_BACKENT_URL}/product_details/3`;
+const API = `http://api.gnoise324.online/api/product_details/`;
+
+
+// const APIS = defineConfig({
+//   server:{
+//     open:`http://api.gnoise324.online/product_details`
+//   }
+// })
+
+// console.log("APIS", APIS)
+
+
+console.log("API", API)
 
 
 
 const ProductDetails = () => {
   const { singleProduct, isSingleLoading, getSingleProduct } =
     useProductContext();
+
+    console.log(singleProduct)
 
   const { addtoCart } = useCartContext();
 

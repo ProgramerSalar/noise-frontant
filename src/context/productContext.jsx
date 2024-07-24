@@ -10,6 +10,7 @@ const AppContext = createContext();
 
 const API = `${import.meta.env.VITE_BACKENT_URL}/product_details`;
 
+
 // privider
 const AppPrivider = ({ children }) => {
   const initialState = {
@@ -38,7 +39,7 @@ const AppPrivider = ({ children }) => {
         payload: products,
       });
     } catch (error) {
-      // console.log(error)
+      console.log(error)
       dispatch({
         type: "API_ERROR", // write a random things
       });
@@ -52,9 +53,9 @@ const AppPrivider = ({ children }) => {
 
     try {
       const res = await axios.get(url);
-      // console.log("data", res)
+      console.log("data", res)
       const singleProduct = await res.data;
-      // console.log("products", products)
+      console.log("products", singleProduct)
       dispatch({
         type: "SET_SINGLE_PRODUCT", // write a random things
         payload: singleProduct,
