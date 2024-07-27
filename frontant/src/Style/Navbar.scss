@@ -1,0 +1,160 @@
+// ../assets/offer/twenty_one.png
+// navbar css 
+
+
+
+
+@media screen and (min-width:0px) and (max-width:450px) {
+
+
+    /* Your existing CSS */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  align-items: center;
+  position: sticky; /* Add this */
+  top: 0; /* Stick to the top */
+  z-index: 100; /* Ensure it appears above other content */
+  height: 4rem;
+}
+
+.logo-name {
+  width: 100px;
+  /* height: 100px; */
+}
+
+.ul-tag {
+  visibility: hidden;
+  display: none;
+}
+
+.col-1 {
+  font-size: 25px;
+  align-items: center;
+}
+
+.col-1 a {
+  padding: 10px;
+}
+
+.navbar-icon{
+  
+  svg{
+    font-size: 1.4rem;
+  }
+}
+
+    
+  }
+  
+  
+  
+  
+  
+  @media screen and (min-width:450px) and (max-width:1024px) {
+  
+  
+    .navbar{
+      display: flex;
+      justify-content: space-around;
+      padding: 0.8rem;
+      align-items: center;
+  height: 4rem;
+
+  
+    }
+  
+    .logo-name{
+      width: 100px;
+      
+    }
+  
+    .ul-tag{
+      display: flex;
+      align-items: center;
+      // margin-left: 1rem;
+      visibility: hidden;
+      display: none;
+  
+      li{
+        a{
+          padding-left: 1.5rem;
+          font-size: large;
+        }
+      }
+    }
+  
+    .col-1{
+      font-size: 25px;
+      align-items: center;
+      padding-left: 1rem;
+  
+      
+      a{
+        padding: 1rem;
+      }
+    }
+    .navbar-icon{
+  
+      svg{
+        font-size: 1.4rem;
+      }
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width:1024px) {
+  
+  
+    .navbar{
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+      align-items: center;
+  height: 5.5rem;
+
+  
+    }
+  
+    .logo-name{
+      width: 100px;
+    }
+  
+    .ul-tag{
+      display: flex;
+      align-items: center;
+      // margin-left: 1rem;
+  
+      li{
+        a{
+          padding-left: 1.5rem;
+        }
+      }
+    }
+  
+    .col-1{
+      font-size: 25px;
+      align-items: center;
+      
+  
+      
+      a{
+        padding: 1rem;
+      }
+    }
+
+    li{
+      a{
+        padding-left: 1.5rem;
+      }
+    }
+    
+  }
+  

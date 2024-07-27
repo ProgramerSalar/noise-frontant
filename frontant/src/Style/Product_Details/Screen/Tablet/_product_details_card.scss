@@ -1,0 +1,222 @@
+// product details section
+
+.product-detaiils-card-section-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 2vw;
+
+  // product name
+  .product-name {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 3px 1px;
+  }
+
+  // product description
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 1px;
+
+    p {
+      padding: 3px 1px;
+      opacity: 0.7;
+    }
+  }
+
+  .product-details-card-body {
+    margin: 15px 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    // price
+
+    .price {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+
+      .price {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+
+      .old-price {
+        font-size: 1.5rem;
+        opacity: 0.7;
+      }
+    }
+
+    // rating
+    .rating {
+      // display: inline-block;
+      display: flex;
+      gap: 0.5rem;
+
+      svg {
+        // display: inline-block;
+        color: rgb(232, 232, 41);
+        // background: rgb(236, 236, 48);
+      }
+      .rating {
+        font-weight: bolder;
+      }
+      .rating-count {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .include-all-tax-text {
+    display: flex;
+    margin-top: -0.7rem;
+    opacity: 0.7;
+    font-weight: lighter;
+  }
+}
+
+// color and buy section
+
+.color-and-buy-container-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 2vw;
+
+  .buy-and-color-container {
+    display: flex;
+    // flex-direction: column;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    border-bottom: 1px solid rgb(202, 172, 172);
+
+    .color-container {
+      border-top: 1px solid rgb(202, 172, 172);
+      padding: 10px 5px;
+
+      h2 {
+        margin: 5px;
+        opacity: 0.7;
+        font-size: 1rem;
+      }
+
+      button {
+        border: solid rgb(169, 146, 146) 1px;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: white;
+        margin: 10px 5px;
+        margin-bottom: 15px;
+      }
+
+      
+
+      .image-of-product {
+        display: flex;
+        // border: solid 1px rgb(178, 147, 147);
+        cursor: pointer;
+
+
+        img {
+          width: 10vw;
+          object-fit: cover;
+          margin: 1rem 5px;
+          border: solid rgb(179, 163, 163) 1px;
+          background-color: whitesmoke;
+          padding: 10px;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+.color-tag{
+  display: flex;
+  padding: 10px;
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1rem;
+        
+
+
+        p {
+          opacity: 0.7;
+        }
+
+        span {
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
+}
+
+
+.quntity-and-buy-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  .quantity-buy-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5px;
+  }
+
+  .quantity {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+
+    button {
+      padding: 0.5vw 2vw;
+      // border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border: none;
+      background-color: rgb(91, 91, 121);
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .buy-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    button {
+      border: none;
+      background-color: rgb(173, 39, 39);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 1rem;
+    }
+  }
+}
+
+// pravicy policy section
+
+.privicy-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid rgb(208, 194, 194);
+  padding: 2vw 2vw;
+
+  text-align: center;
+  align-items: center;
+
+  div {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,61 @@
+
+.product-details-container-section{
+  background-color: rgb(162, 155, 155);
+}
+
+// mobile screen
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  @import "../Product_Details/Screen/Mobile/crouselProduct";
+  @import "../Product_Details/Screen/Mobile/product_details_card";
+  @import "../Product_Details/Screen/Mobile/Col_Two.scss";
+
+  .product-details-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+// Table screen
+
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+  @import "../Product_Details/Screen/Tablet/crouselProduct";
+  @import "../Product_Details/Screen/Tablet/product_details_card";
+  @import "../Product_Details/Screen/Tablet/Col_Two.scss";
+
+  .product-details-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.3rem;
+    margin-bottom: 2rem;
+    // background-color: green;
+  }
+}
+
+// big screen
+@media screen and (min-width: 1024px) {
+  @import "../Product_Details/Screen/Big_Screen/crouselProduct";
+  @import "../Product_Details/Screen/Big_Screen/product_details_card";
+  @import "../Product_Details/Screen/Big_Screen/Col_Two.scss";
+
+  .product-container-section {
+    display: flex;
+    flex-direction: row;
+    // background-color: green;
+    border: solid black 1px;
+    border-right: none;
+    border-radius: 1rem;
+    margin: 2vw;
+
+    CrouselProduct {
+      display: flex;
+      flex-basis: 20%;
+    }
+
+    Col_One {
+      display: flex;
+      flex-basis: 80%;
+    }
+  }
+}

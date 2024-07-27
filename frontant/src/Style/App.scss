@@ -1,0 +1,82 @@
+@import "../Style/Navbar.scss";
+@import "../Style/category.scss";
+@import "../Style/product";
+@import "../Style//content";
+@import "../Style/blog";
+@import "../Style/testimonail";
+@import "../Style/offer";
+@import "../Style/Collection.scss";
+@import "../Style/Product_Details/productdetails";
+@import "../Style/Footer.scss";
+@import "../Style/Faq.scss";
+@import "../Style/Disclaimer.scss";
+@import "../Style/spacification";
+@import "../Style/reviews/HeadingReviews.scss";
+@import "../Style/reviews/ReviewCard.scss";
+@import "../Style/reviews/Review.scss";
+@import "../Style/CartItemCard.scss";
+@import "../Style/checkoutCart.scss";
+@import "../Style/checkoutFooter.scss";
+@import "../Style/payment";
+
+
+
+@font-face {
+  font-family: nb;
+  src: url('../assets/font/site-wise-font-noise.ttf');
+}
+
+p{
+  color: black;
+}
+
+a{
+  color: black;
+}
+span{
+  color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: nb;
+
+}
+
+
+html,body{
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.nav-container{
+  background:#000000;
+
+}
+
+
+.home-container{
+  // background: rgb(146, 139, 134);
+  background-color: white;
+  // background: radial-gradient(#fff, #ffd6d6);
+}
+
+
+
+.single-image{
+  display: flex;
+  object-fit: contain;
+  width: 100%;
+}
